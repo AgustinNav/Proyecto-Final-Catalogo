@@ -8,7 +8,7 @@
 
 .container {
     display: grid;
-    width: auto;
+    width: 100%;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20vh 55vh auto 18vh;
@@ -27,7 +27,7 @@
 
 .nav {
     grid-area: nav;
-    width: 100vw;
+    width: 100%;
     background-image: url(../img/fondoNav.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@
 .mainEstilos {
     grid-area: main;
     display: grid;
-    width: 100vw;
+    width: 100%;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -189,6 +189,7 @@
     background-color: rgba(194, 102, 102, 0.4);
     box-shadow: 15px 15px 5px #d5b176;
     border: 0.5px solid rgba(0, 0, 0, 0.5);
+    margin: 20px;
 }
 
 .mainEstilos img {
@@ -524,22 +525,22 @@ h3 {
     .mainQS {
         margin-bottom: 80px;
     }
-    
+
     .textoQS {
         width: 95vw;
         margin-right: 0px;
         padding: 10px;
     }
-    
+
     .textoQS h1 {
         margin-bottom: 0px;
     }
-    
+
     .textoQS p {
         padding: 10px;
         border-radius: 35px;
     }
-    
+
     .fotoQS img {
         width: 325px;
         height: 200px;
