@@ -7,27 +7,28 @@
 /* Contenedor padre  */
 
 .container {
-    display: grid;
-    width: 100%;
+    width: auto;
     height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 20vh 55vh auto 18vh;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+    overflow: hidden;
     justify-content: stretch;
     align-content: stretch;
     justify-items: stretch;
     align-items: stretch;
-    grid-template-areas:
-        "nav nav nav"
-        "header header header"
-        "main main main"
-        "footer footer footer";
 }
 
 /* Navegador  */
 
 .nav {
     grid-area: nav;
-    width: 100%;
+    width: auto;
     background-image: url(../img/fondoNav.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -112,11 +113,8 @@
 .liNav:hover {
     background-color: #eeeeee;
     box-shadow: 2px 5px #d39735;
-}
-
-.liNav.active {
-    border: 2px dotted rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 5px #d39735;
+    transition: .3s;
+    transform: scale(1.1);
 }
 
 .liLogo {
@@ -127,7 +125,8 @@
 }
 
 .liLogo:hover {
-    opacity: 90%;
+    transition: .3s;
+    transform: scale(1.05);
 }
 
 /* Header/Banner */
@@ -150,18 +149,26 @@
     /* Animacion */
 }
 
+.banner img {
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.banner img:hover {
+    transition: .3s;
+    transform: scale(1.02);
+}
+
 /*-------------------- Mains --------------------*/
 
 .main {
     grid-area: main;
     display: flex;
-    align-content: space-around;
-    align-items: center;
     justify-items: center;
+    text-align: center;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 /* Main Index */
@@ -169,14 +176,14 @@
 .mainEstilos {
     grid-area: main;
     display: grid;
-    width: 100%;
+    width: 99%;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
     justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-evenly;
 }
 
 .mainEstilos div {
@@ -190,6 +197,10 @@
     box-shadow: 15px 15px 5px #d5b176;
     border: 0.5px solid rgba(0, 0, 0, 0.5);
     margin: 20px;
+    transform: skew(-3deg);
+    animation-name: animacionBorder;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
 }
 
 .mainEstilos img {
@@ -198,6 +209,9 @@
     margin: 15px;
     width: 350px;
     height: 350px;
+    animation-name: animacionBorder;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
 }
 
 .mainEstilos h2 {
@@ -332,6 +346,11 @@ textarea {
     padding: 5px;
 }
 
+.mainContacto input:focus {
+    transform: scale(1.15);
+    transition: .3s;
+}
+
 /* Footer */
 
 .footer {
@@ -342,7 +361,8 @@ textarea {
     grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "redes legales logo";
-    background-color: rgba(185, 29, 29, 0.4);
+    background: rgb(230, 207, 207);
+    background: radial-gradient(circle, rgba(230, 207, 207, 1) 0%, rgba(185, 29, 29, 0.4) 100%);
     box-sizing: border-box;
     align-content: center;
     align-items: center;
@@ -352,7 +372,7 @@ textarea {
 .redes {
     grid-area: redes;
     display: flex;
-    width: 100%;
+    width: auto;
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
@@ -406,7 +426,7 @@ textarea {
 /* VARIOS */
 
 body {
-    background-color: #ebd8d8;
+    background-image: linear-gradient(to bottom, #e6cfcf, white);
 }
 
 .block {
@@ -435,23 +455,93 @@ h3 {
     padding: 10px;
 }
 
+/* ANIMACIONES */
+/* Propia */
+@keyframes animacionBorder {
+    0% {
+        border: 1px solid #b91d1d;
+    }
+
+    50% {
+        border: 1px solid #d5b176;
+    }
+
+    100% {
+        border: 1px solid #b91d1d;
+    }
+}
+
 /* RESPONSIVE - MEDIA QUERY - MOBILE LAST */
 /* MOBILE LAST = MAX-WIDTH */
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:
-            "nav nav nav"
-            "header header header"
-            "main main main"
-            "footer footer footer";
-        overflow: hidden;
-    }
+/* DEVICE LR */
+@media (max-width: 1350px) {
 
     .menu {
         align-items: center;
         height: 18vh;
+    }
+
+    .liNav {
+        width: 80px;
+        height: auto;
+    }
+
+    .header img {
+        height: 250px;
+        width: 700px;
+    }
+
+    .mainEstilos {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    .mainEstilos div {
+        margin: 20px;
+    }
+
+    .mainCat div {
+        flex-direction: column;
+    }
+
+    .mainQS {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 20px;
+    }
+
+    .textoQS {
+        width: 100%;
+    }
+
+    .fotoQS {
+        position: relative;
+        top: 10px;
+    }
+
+    .footer {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+/* DEVICE MD */
+@media (max-width: 900px) {
+
+    .menu {
+        display: none;
+    }
+
+    .menuAlt {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .liNav {
@@ -499,6 +589,22 @@ h3 {
     .footer {
         position: relative;
         bottom: 0;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh auto 18vh;
+        grid-template-areas:
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .header {
+        display: none;
     }
 }
 

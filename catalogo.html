@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Iconos -->
     <link rel="shortcut icon" href="./img/favi.ico">
     <script src="https://kit.fontawesome.com/1ac0559730.js" crossorigin="anonymous"></script>
     <!-- Estilo -->
     <link rel="stylesheet" href="./css/style.css">
-    
+
     <title>Catalogo</title>
 </head>
 
@@ -31,8 +34,10 @@
             </ul>
             <ul class="menuAlt">
                 <li class="liNav"><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
-                <li class="liNav"><a href="./quienes_somos.html"><i class="fa-solid fa-circle-question fa-lg"></i></a></li>
-                <li class="liNav"><a class="active" href="./catalogo.html"><i class="fa-solid fa-book-open"></i></a></li>
+                <li class="liNav"><a href="./quienes_somos.html"><i class="fa-solid fa-circle-question fa-lg"></i></a>
+                </li>
+                <li class="liNav"><a class="active" href="./catalogo.html"><i class="fa-solid fa-book-open"></i></a>
+                </li>
                 <li class="liNav"><a href="./newin.html"><i class="fa-solid fa-crown"></i></a></li>
                 <li class="liNav"><a href="./contacto.html"><i class="fa-solid fa-message"></i></a></li>
             </ul>
@@ -49,7 +54,7 @@
             <h1>CATALOGO</h1>
 
             <div class="mainCat">
-                <div>
+                <div class="animate__animated animate__fadeInLeftBig wow">
                     <img src="./img/cat1.jpeg" alt="Prenda N1">
                     <section>
                         <h2>Caracteristicas</h2>
@@ -60,7 +65,7 @@
                         </ul>
                     </section>
                 </div>
-                <div>
+                <div class="animate__animated animate__fadeInLeftBig wow">
                     <img src="./img/cat2.jpeg" alt="Prenda N1">
                     <section>
                         <h2>Caracteristicas</h2>
@@ -71,7 +76,7 @@
                         </ul>
                     </section>
                 </div>
-                <div>
+                <div class="animate__animated animate__fadeInLeftBig wow">
                     <img src="./img/cat3.jpeg" alt="Prenda N1">
                     <section>
                         <h2>Caracteristicas</h2>
@@ -109,6 +114,10 @@
         </div>
 
     </div>
+
+    <script src="js/wow.js"></script>
+    <script>new WOW().init();</script>
+
 </body>
 
 </html>
