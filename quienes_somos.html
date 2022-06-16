@@ -11,10 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
     <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Iconos -->
     <link rel="shortcut icon" href="./img/favi.ico">
     <script src="https://kit.fontawesome.com/1ac0559730.js" crossorigin="anonymous"></script>
+    <!-- BootsTraps -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Estilo -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -22,35 +24,39 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid containerLocal p-0 m-0">
 
-        <div class="nav">
-            <ul class="menu">
-                <li class="liNav"><a class="active" href="./quienes_somos.html">Quienes somos</a></li>
-                <li class="liNav"><a href="./catalogo.html">Catalogo</a></li>
-                <li class="liLogo"><a href="./index.html"><img src="./img/logo.jpg" alt="logo"></a></li>
-                <li class="liNav"><a href="./newin.html">NEW IN!</a></li>
-                <li class="liNav"><a href="./contacto.html">Contacto</a></li>
+        <nav class="row navLocal p-0 m-0">
+            <ul class="d-flex menu justify-content-evenly align-items-end animate__animated animate__zoomIn">
+                <!-- Menu estandar -->
+                <li class="liNav Std"><a class="active" href="./quienes_somos.html">Quienes somos</a></li>
+                <li class="liNav Std"><a href="./catalogo.html">Catalogo</a></li>
+                <li class="liLogo Std"><a href="./index.html"><img src="./img/logo.jpg" alt="logo"></a>
+                </li>
+                <li class="liNav Std"><a href="./newin.html">NEW IN!</a></li>
+                <li class="liNav Std"><a href="./contacto.html">Contacto</a></li>
+                <!-- Menu alternativo -->
+                <li class="liNav Alt"><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li class="liNav Alt"><a class="active" href="./quienes_somos.html"><i
+                            class="fa-solid fa-circle-question fa-lg"></i></a>
+                </li>
+                <li class="liNav Alt"><a href="./catalogo.html"><i class="fa-solid fa-book-open"></i></a>
+                </li>
+                <li class="liNav Alt"><a href="./newin.html"><i class="fa-solid fa-crown"></i></a></li>
+                <li class="liNav Alt"><a href="./contacto.html"><i class="fa-solid fa-message"></i></a></li>
             </ul>
-            <ul class="menuAlt">
-                <li class="liNav"><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
-                <li class="liNav"><a class="active" href="./quienes_somos.html"><i class="fa-solid fa-circle-question fa-lg"></i></a></li>
-                <li class="liNav"><a href="./catalogo.html"><i class="fa-solid fa-book-open"></i></a></li>
-                <li class="liNav"><a href="./newin.html"><i class="fa-solid fa-crown"></i></a></li>
-                <li class="liNav"><a href="./contacto.html"><i class="fa-solid fa-message"></i></a></li>
-            </ul>
-        </div>
+        </nav>
 
-        <header class="header">
-            <div class="banner">
+        <header class="row header">
+            <div class="col-auto banner">
                 <img src="./img/banner.jpg" alt="Banner">
             </div>
         </header>
 
-        <main class="main">
-            <div class="mainQS">
-                <div class="textoQS animate__animated animate__backInLeft">
-                    <h1>Nosotras:</h1>
+        <main class="container-fluid d-flex flex-column align-items-center justify-content-center main">
+            <div class="mainQS row container-fluid d-flex flex-row flex-wrap align-content-center justify-content-center align-items-center">
+                <div class="textoQS col-auto d-flex flex-column flex-wrap animate__animated animate__backInLeft">
+                    <h1>Sobre Nosotros:</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel et eveniet ad recusandae eum, sed
                         consectetur vitae dignissimos soluta, accusamus reprehenderit laboriosam minus ipsa sint
                         explicabo animi
@@ -79,7 +85,7 @@
                         autem
                         libero et vitae blanditiis minima impedit voluptate! Iste amet possimus eius ullam rerum.</p>
                 </div>
-                <div class="fotoQS animate__animated animate__backInRight">
+                <div class="fotoQS col-auto container fluid text-align-center animate__animated animate__backInRight">
                     <img src="./img/diseñadores-que-trabajan-y-que-se-inspiran-en-una-reunión-44686640.jpg"
                         alt="Foto del team">
                     <p>*Lorem ipsum dolor sit amet consectetur adipisicing elit.*</p>
@@ -87,26 +93,36 @@
             </div>
         </main>
 
-        <div class="footer">
-            <div class="redes">
-
+        <footer class="row container-fluid footer p-0 m-0">
+            <div class="redes col d-flex justify-content-evenly align-items-center">
                 <a href="https://wa.me/+5491136629175?text=Me%20interesa%20una%20prenda%20que%20estás%20vendiendo"><i
-                        class="fa-brands fa-whatsapp fa-2xl"></i></a>
-                <a href="https://www.instagram.com/__redhoney/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                <a href="https://twitter.com/borges_erika"><i class="fa-brands fa-twitter fa-2xl"></i></a>
-                <a href="https://es-la.facebook.com/ModaEstiloMujeres/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a href="https://www.youtube.com/watch?v=UM8XW543tmw"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                        class="fa-brands fa-whatsapp fa-2xl animate__animated animate__bounceIn"></i></a>
+                <a href="https://www.instagram.com/__redhoney/"><i class="fa-brands fa-instagram fa-2xl animate__animated
+                        animate__bounceIn"></i></a>
+                <a href="https://twitter.com/borges_erika"><i class="fa-brands fa-twitter fa-2xl animate__animated
+                        animate__bounceIn"></i></a>
+                <a href="https://es-la.facebook.com/ModaEstiloMujeres/"><i class="fa-brands fa-facebook fa-2xl
+                        animate__animated animate__bounceIn"></i></a>
+                <a href="https://www.youtube.com/watch?v=UM8XW543tmw"><i class="fa-brands fa-youtube fa-2xl
+                        animate__animated animate__bounceIn"></i></a>
             </div>
+            <div class="legales col">
 
-            <div class="logoContact">
+            </div>
+            <div class="logoContact col">
                 <ul>
                     <li><a href="./index.html"><img src="./img/logo.jpg" alt="Logo"></a></li>
                     <li>© ®</li>
                 </ul>
             </div>
-        </div>
+        </footer>
 
     </div>
+    <!-- Scripts externos -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
