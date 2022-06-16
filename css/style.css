@@ -198,18 +198,12 @@
 /* Main Catalogo */
 
 .mainCat {
-    display: flex;
     width: 70vw;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
 }
 
 .mainCat div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
+    width: auto;
     margin: 15px;
     padding: 10px;
     border: 1px solid black;
