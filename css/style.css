@@ -17,6 +17,7 @@
 .navLocal {
     height: 180px;
     width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .menuAlt {
@@ -36,6 +37,8 @@
     text-decoration: none;
 }
 
+    /*Pseudoclases*/
+
 .menu a:hover {
     color: black;
     font-weight: 700;
@@ -48,7 +51,7 @@
     font-weight: 600;
 }
 
-.liNav {
+.menu li:not(:nth-child(3)) {
     list-style-type: none;
     overflow: hidden;
     box-shadow: 2px 5px #d5b176;
@@ -58,21 +61,21 @@
     text-align: center;
 }
 
-.liNav:hover {
+.menu li:not(:nth-child(3)):hover {
     background-color: #eeeeee;
     box-shadow: 2px 5px #d39735;
     transition: .3s;
     transform: scale(1.1);
 }
 
-.liLogo {
+.menu li:nth-child(3) {
     list-style-type: none;
     overflow: hidden;
     border-radius: 100%;
     background-color: #ffffff;
 }
 
-.liLogo:hover {
+.menu li:nth-child(3):hover {
     transition: .3s;
     transform: scale(1.05);
 }
@@ -86,17 +89,11 @@
 .header {
     width: auto;
     height: auto;
-    align-items: center;
-    justify-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: center;
 }
 
-.banner {
-    padding: 30px;
-    /* Animacion */
+.carousel-item {
+    height: auto;
+    width: auto;
 }
 
 .banner img {
@@ -105,8 +102,7 @@
 }
 
 .banner img:hover {
-    transition: .3s;
-    transform: scale(1.02);
+    filter: blur(3px);
 }
 
 /*-------------------- Mains --------------------*/
@@ -303,7 +299,6 @@ textarea {
 }
 
 .logoContact {
-    grid-area: logo;
     display: flex;
     width: 50%;
     justify-content: space-evenly;
@@ -379,15 +374,14 @@ p {
 /* MOBILE LAST = MAX-WIDTH */
 /* DEVICE LR */
 
-@media (max-width: 1350px) {
+@media (max-width: 1400px) {
+
+    .header {
+        display: none;
+    }
 
     .navLocal {
         height: auto;
-    }
-
-    .header img {
-        height: 250px;
-        width: 700px;
     }
 
     .mainEstilos div {
@@ -411,11 +405,6 @@ p {
 
 /* DEVICE MD */
 @media (max-width: 900px) {
-
-    .header img {
-        height: 250px;
-        width: 700px;
-    }
 
     .mainEstilos div {
         margin: 20px;
@@ -462,9 +451,5 @@ p {
 }
 
 @media (max-width: 740px) {
-
-    .header {
-        display: none;
-    }
 
 }
