@@ -6,6 +6,11 @@
     list-style: none;
 }
 
+/* Variables */
+
+@import './variables/colores';
+
+
 /* Particiones */
 
 // Nav
@@ -76,15 +81,15 @@ p {
 
 @keyframes animacionBorder {
     0% {
-        border: 1px solid #b91d1d;
+        border: 1px solid $rojoMain;
     }
 
     50% {
-        border: 1px solid #d5b176;
+        border: 1px solid $oroMain;
     }
 
     100% {
-        border: 1px solid #b91d1d;
+        border: 1px solid $rojoMain;
     }
 }
 

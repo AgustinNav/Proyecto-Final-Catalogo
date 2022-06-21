@@ -19,7 +19,7 @@
         }
 
         &.active {
-            color: #b91d1d;
+            color: $rojoMain;
             text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
             font-size: medium;
             font-weight: 600;
@@ -30,7 +30,7 @@
         &:not(:nth-child(3)) {
             list-style-type: none;
             overflow: hidden;
-            box-shadow: 2px 5px #d5b176;
+            box-shadow: 2px 5px $oroMain;
             border-radius: 95px;
             background-color: #ffffff;
             padding: 15px;
@@ -38,7 +38,7 @@
 
             &:hover {
                 background-color: #eeeeee;
-                box-shadow: 2px 5px #d39735;
+                box-shadow: 2px 5px $oroMain;
                 transition: .3s;
                 transform: scale(1.1);
             }
