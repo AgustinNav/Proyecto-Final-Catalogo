@@ -5,7 +5,7 @@
     background: radial-gradient(circle, rgba(230, 207, 207, 1) 0%, rgba(185, 29, 29, 0.4) 100%);
     box-sizing: border-box;
 
-    .redes {
+    &__redes {
         width: auto;
 
         .fa-whatsapp {
@@ -30,7 +30,11 @@
 
     }
 
-    .logoContact {
+    &__legales{
+        
+    }
+
+    &__logoContact {
         display: flex;
         width: 50%;
         justify-content: space-evenly;

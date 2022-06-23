@@ -1,22 +1,8 @@
 /* Index */
 
-.mainEstilos {
-    img {
-        border: 0.5px solid rgba(0, 0, 0, 0.5);
-        border-radius: 25px;
-        margin: 15px;
-        width: auto;
-        height: auto;
-        animation-name: animacionBorder;
-        animation-duration: 10s;
-        animation-iteration-count: 5;
-    }
+.mainInx {
 
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    .cardPrenda {
+    &__card {
         overflow: hidden;
         height: auto;
         width: auto;
@@ -38,6 +24,22 @@
             transition: .3s;
             transform: scale(1.02);
         }
+
+        img {
+            border: 0.5px solid rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
+            margin: 15px;
+            width: auto;
+            height: auto;
+            animation-name: animacionBorder;
+            animation-duration: 10s;
+            animation-iteration-count: 5;
+        }
+    
+        h2 {
+            margin-bottom: 20px;
+        }
+
     }
 
 }

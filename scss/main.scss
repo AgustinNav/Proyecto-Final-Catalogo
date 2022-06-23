@@ -98,12 +98,13 @@ p {
 
 /* DEVICE LR */
 @media (max-width: 1400px) {
-    .header {
-        display: none;
+
+    .navL {
+        height: auto;
     }
 
-    .navLocal {
-        height: auto;
+    .header {
+        display: none;
     }
 
     .mainEstilos div {
@@ -114,14 +115,14 @@ p {
         margin-top: 0;
         margin-bottom: 0;
         padding: 20px;
-    }
 
-    .textoQS {
-        width: 100%;
-    }
+        .textoQS {
+            width: 100%;
+        }
 
-    .fotoQS {
-        display: none;
+        .fotoQS {
+            display: none;
+        }
     }
 }
 
@@ -135,36 +136,14 @@ p {
         margin-top: 0;
         margin-bottom: 0;
         padding: 20px;
-    }
 
-    .textoQS {
-        width: 100%;
-    }
+        .textoQS {
+            width: 100%;
+        }
 
-    .fotoQS {
-        position: relative;
-        top: 10px;
-    }
-}
-
-/* DEVICE SM */
-@media (max-width: 840px) {
-    .Std {
-        display: none;
-    }
-
-    .Alt {
-        display: inline;
-    }
-
-    .menu {
-        height: 10vh;
-    }
-
-    .liNav {
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-        margin: 0px;
+        .fotoQS {
+            position: relative;
+            top: 10px;
+        }
     }
 }

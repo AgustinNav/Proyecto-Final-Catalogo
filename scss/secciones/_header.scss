@@ -1,21 +1,23 @@
 .header {
     width: auto;
     height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
-    .carousel-item {
-        height: auto;
-        width: auto;
-    }
+    &__banner {
 
-    .banner img {
-        border: 2px solid white;
-        border-radius: 15px;
-        width: 1300px;
-        height: 500px;
+        &__carousel-inner {
 
-        &:hover {
-            filter: blur(2px);
+            img {
+                border: 2px solid white;
+                border-radius: 15px;
+                width: 1300px;
+                height: 500px;
+
+                &:hover {
+                    filter: blur(2px);
+                }
+            }
         }
     }
-
 }
