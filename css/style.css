@@ -58,7 +58,9 @@
     width: auto; }
   .header .banner img {
     border: 2px solid white;
-    border-radius: 15px; }
+    border-radius: 15px;
+    width: 1300px;
+    height: 500px; }
     .header .banner img:hover {
       filter: blur(2px); }
 
