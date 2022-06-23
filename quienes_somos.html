@@ -26,30 +26,32 @@
 <body>
     <div class="container-fluid containerLocal p-0 m-0">
 
-        <nav class="row navLocal p-0 m-0">
-            <ul class="d-flex menu justify-content-evenly align-items-end animate__animated animate__zoomIn">
+        <nav class="row navL p-0 m-0">
+            <ul class="d-flex navL__menu justify-content-evenly align-items-end animate__animated animate__zoomIn">
                 <!-- Menu estandar -->
-                <li class="liNav Std"><a class="active" href="./quienes_somos.html">Quienes somos</a></li>
-                <li class="liNav Std"><a href="./catalogo.html">Catalogo</a></li>
-                <li class="liLogo Std"><a href="./index.html"><img src="./img/logo.jpg" alt="logo"></a>
+                <li class="navL__menu__link"><a class="active" href="./quienes_somos.html">Quienes somos</a></li>
+                <li class="navL__menu__link"><a href="./catalogo.html">Catalogo</a></li>
+                <li class="navL__menu__link--logo"><a href="./index.html"><img src="./img/logo.jpg"
+                            alt="logo"></a>
                 </li>
-                <li class="liNav Std"><a href="./newin.html">NEW IN!</a></li>
-                <li class="liNav Std"><a href="./contacto.html">Contacto</a></li>
+                <li class="navL__menu__link"><a href="./newin.html">NEW IN!</a></li>
+                <li class="navL__menu__link"><a href="./contacto.html">Contacto</a></li>
                 <!-- Menu alternativo -->
-                <li class="liNav Alt"><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
-                <li class="liNav Alt"><a class="active" href="./quienes_somos.html"><i
+                <li class="navL__menu__link--alt"><a href="./index.html"><i
+                            class="fa-solid fa-house"></i></a></li>
+                <li class="navL__menu__link--alt"><a class="active" href="./quienes_somos.html"><i
                             class="fa-solid fa-circle-question fa-lg"></i></a>
                 </li>
-                <li class="liNav Alt"><a href="./catalogo.html"><i class="fa-solid fa-book-open"></i></a>
+                <li class="navL__menu__link--alt"><a href="./catalogo.html"><i class="fa-solid fa-book-open"></i></a>
                 </li>
-                <li class="liNav Alt"><a href="./newin.html"><i class="fa-solid fa-crown"></i></a></li>
-                <li class="liNav Alt"><a href="./contacto.html"><i class="fa-solid fa-message"></i></a></li>
+                <li class="navL__menu__link--alt"><a href="./newin.html"><i class="fa-solid fa-crown"></i></a></li>
+                <li class="navL__menu__link--alt"><a href="./contacto.html"><i class="fa-solid fa-message"></i></a></li>
             </ul>
         </nav>
 
-        <header class="row header m-5">
+        <header class="row header">
 
-            <div id="carouselExampleCaptions" class="banner carousel slide container d-flex flex-row"
+            <div id="carouselExampleCaptions" class="header__banner carousel slide container d-flex flex-row"
                 data-bs-ride="false">
 
                 <div class="col carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -58,9 +60,9 @@
                     <span class="visually-hidden">Anterior</span>
                 </div>
 
-                <div class="col carousel-inner">
+                <div class="col header__banner__carousel-inner">
 
-                    <div class="container d-flex flex-row flex-wrap">
+                    <div class="container d-flex flex-row">
 
                         <div class="carousel-item active">
                             <img src="./img/banner1.jpg" class="d-block" alt="Banner 1">
@@ -129,7 +131,7 @@
         </main>
 
         <footer class="row container-fluid footer p-0 m-0">
-            <div class="redes col d-flex justify-content-evenly align-items-center">
+            <div class="footer__redes col d-flex justify-content-evenly align-items-center">
                 <a href="https://wa.me/+5491136629175?text=Me%20interesa%20una%20prenda%20que%20estás%20vendiendo"><i
                         class="fa-brands fa-whatsapp fa-2xl animate__animated animate__bounceIn"></i></a>
                 <a href="https://www.instagram.com/__redhoney/"><i class="fa-brands fa-instagram fa-2xl animate__animated
@@ -141,10 +143,10 @@
                 <a href="https://www.youtube.com/watch?v=UM8XW543tmw"><i class="fa-brands fa-youtube fa-2xl
                         animate__animated animate__bounceIn"></i></a>
             </div>
-            <div class="legales col">
+            <div class="footer__legales col">
 
             </div>
-            <div class="logoContact col">
+            <div class="footer__logoContact col">
                 <ul>
                     <li><a href="./index.html"><img src="./img/logo.jpg" alt="Logo"></a></li>
                     <li>© ®</li>
