@@ -15,28 +15,29 @@
     h2 {
         margin-bottom: 20px;
     }
-}
 
-.cardPrenda {
-    overflow: hidden;
-    height: auto;
-    width: auto;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    text-align: center;
-    background-color: rgba(194, 102, 102, 0.4);
-    box-shadow: 15px 15px 5px #d5b176;
-    border: 0.5px solid rgba(0, 0, 0, 0.5);
-    margin: 20px;
-    transform: skew(-3deg);
-    animation-name: animacionBorder;
-    animation-duration: 10s;
-    animation-iteration-count: 5;
+    .cardPrenda {
+        overflow: hidden;
+        height: auto;
+        width: auto;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        text-align: center;
+        background-color: rgba(194, 102, 102, 0.4);
+        box-shadow: 15px 15px 5px #d5b176;
+        border: 0.5px solid rgba(0, 0, 0, 0.5);
+        margin: 20px;
+        transform: skew(-3deg);
+        animation-name: animacionBorder;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
 
-    &:hover {
-        transition: .3s;
-        transform: scale(1.02);
+        &:hover {
+            transition: .3s;
+            transform: scale(1.02);
+        }
     }
+
 }

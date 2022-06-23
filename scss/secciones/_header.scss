@@ -1,18 +1,19 @@
 .header {
     width: auto;
     height: auto;
-}
 
-.carousel-item {
-    height: auto;
-    width: auto;
-}
-
-.banner img {
-    border: 2px solid white;
-    border-radius: 15px;
-
-    &:hover {
-        filter: blur(2px);
+    .carousel-item {
+        height: auto;
+        width: auto;
     }
+
+    .banner img {
+        border: 2px solid white;
+        border-radius: 15px;
+
+        &:hover {
+            filter: blur(2px);
+        }
+    }
+
 }
