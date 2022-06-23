@@ -273,10 +273,6 @@ p {
   font-family: 'Cutive Mono', monospace;
   padding: 5px; }
 
-/*Pseudoclases*/
-.Alt {
-  display: none; }
-
 /* Contenedor padre  */
 .containerLocal {
   width: auto;
