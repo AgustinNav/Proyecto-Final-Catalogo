@@ -8,7 +8,7 @@
 
     &__menu {
         a {
-            color: rgb(0, 0, 0);
+            color: black;
             text-transform: capitalize;
             text-decoration: none;
 
@@ -18,10 +18,7 @@
             }
 
             &.active {
-                color: $rojoMain;
-                text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-                font-size: medium;
-                font-weight: 600;
+                @extend %menuActive;
             }
         }
 
@@ -36,10 +33,7 @@
                 text-align: center;
 
                 &:hover {
-                    background-color: #eeeeee;
-                    box-shadow: 2px 5px $oroMain;
-                    transition: .3s;
-                    transform: scale(1.1);
+                    @extend %estiloHover;
                 }
             }
 
@@ -47,7 +41,7 @@
                 list-style-type: none;
                 overflow: hidden;
                 border-radius: 100%;
-                background-color: #ffffff;
+                background-color: white;
 
                 &:hover {
                     transition: .3s;

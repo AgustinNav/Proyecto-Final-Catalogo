@@ -11,14 +11,12 @@
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
         text-align: center;
-        background-color: rgba(194, 102, 102, 0.4);
-        box-shadow: 15px 15px 5px #d5b176;
+        background-color: $rojo40;
+        box-shadow: 15px 15px 5px $oroMain;
         border: 0.5px solid rgba(0, 0, 0, 0.5);
         margin: 20px;
         transform: skew(-3deg);
-        animation-name: animacionBorder;
-        animation-duration: 10s;
-        animation-iteration-count: 5;
+        @extend %animacionBorde;
 
         &:hover {
             transition: .3s;
@@ -31,9 +29,7 @@
             margin: 15px;
             width: auto;
             height: auto;
-            animation-name: animacionBorder;
-            animation-duration: 10s;
-            animation-iteration-count: 5;
+            @extend %animacionBorde;
         }
     
         h2 {

@@ -1,0 +1,24 @@
+%estilosTextos {
+    font-family: 'Cutive Mono', monospace;
+    padding: 5px;
+}
+
+%menuActive {
+    color: $rojoMain;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: medium;
+    font-weight: 600;
+}
+
+%estiloHover {
+    background-color: #eeeeee;
+    box-shadow: 2px 5px $oroMain;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+%animacionBorde {
+    animation-name: animacionBorder;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+}

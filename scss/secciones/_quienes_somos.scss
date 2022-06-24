@@ -14,7 +14,8 @@
         align-items: center;
         margin-right: 30px;
         padding: 30px;
-        border: 1px solid black;
+        border: 1px solid;
+        @extend %animacionBorde;
         border-radius: 35px;
 
         h1 {
@@ -31,7 +32,8 @@
 
     .fotoQS img {
         border-radius: 35px;
-        border: 1px solid black;
+        border: 1px solid;
+        @extend %animacionBorde;
         width: 525px;
         height: 350px;
     }
