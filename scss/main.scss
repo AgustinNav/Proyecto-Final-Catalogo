@@ -64,6 +64,11 @@ p {
     @extend %estilosTextos;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* Contenedor padre  */
 
 .containerLocal {

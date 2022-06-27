@@ -14,13 +14,13 @@ p {
   font-family: 'Cutive Mono', monospace;
   padding: 5px; }
 
-.navL__menu a.active {
+.navL__menu__link.active, .mainInx__card__boton.active {
   color: #b91d1d;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   font-size: medium;
   font-weight: 600; }
 
-.navL__menu__link:not(--logo):hover {
+.navL__menu__link:hover {
   background-color: #eeeeee;
   box-shadow: 2px 5px #d5b176;
   transition: .3s;
@@ -39,31 +39,28 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
-  .navL__menu a {
-    color: black;
+  .navL__menu__link {
     text-transform: capitalize;
-    text-decoration: none; }
-    .navL__menu a:hover {
-      color: black;
-      font-weight: 700; }
-  .navL__menu__link:not(--logo) {
-    list-style-type: none;
-    overflow: hidden;
+    text-decoration: none;
+    color: black;
     box-shadow: 2px 5px #d5b176;
     border-radius: 95px;
-    background-color: #ffffff;
+    background-color: white;
     padding: 15px;
     text-align: center; }
-  .navL__menu__link--logo {
-    list-style-type: none;
-    overflow: hidden;
-    border-radius: 100%;
-    background-color: white; }
-    .navL__menu__link--logo:hover {
-      transition: .3s;
-      transform: scale(1.05); }
-  .navL__menu__link--alt {
-    display: none; }
+    .navL__menu__link:hover {
+      color: black;
+      font-weight: 700; }
+    .navL__menu__link--logo {
+      list-style-type: none;
+      overflow: hidden;
+      border-radius: 100%;
+      background-color: white; }
+      .navL__menu__link--logo:hover {
+        transition: .3s;
+        transform: scale(1.05); }
+    .navL__menu__link--alt {
+      display: none; }
 
 @media (max-width: 840px) {
   .navL {
@@ -109,13 +106,14 @@ p {
 /* Index */
 .mainInx__card {
   overflow: hidden;
-  height: auto;
   width: auto;
+  height: 500px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   text-align: center;
+  text-decoration: none;
   background-color: #b91d1d75;
   box-shadow: 15px 15px 5px #d5b176;
   border: 0.5px solid rgba(0, 0, 0, 0.5);
@@ -132,6 +130,18 @@ p {
     height: auto; }
   .mainInx__card h2 {
     margin-bottom: 20px; }
+  .mainInx__card__boton {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 5px #b91d1d75;
+    border-radius: 95px;
+    background-color: #d5b176;
+    padding: 15px;
+    text-align: center; }
+    .mainInx__card__boton:hover {
+      color: black;
+      font-weight: 700; }
 
 /* Quienes somos */
 .mainQS {
@@ -269,6 +279,10 @@ body {
   .stick img {
     width: 75px;
     height: 75px; }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 /* Contenedor padre  */
 .containerLocal {
