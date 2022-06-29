@@ -161,7 +161,7 @@ p {
     border-radius: 35px; }
     .mainQS .textoQS h1 {
       margin-bottom: 15px; }
-    .mainQS .textoQS p {
+    .mainQS .textoQS .parrafo {
       padding: 10px;
       border: 1px solid black;
       border-radius: 15px;
