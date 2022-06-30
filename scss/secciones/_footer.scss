@@ -31,7 +31,11 @@
     }
 
     &__legales{
-        
+        width: auto;
+        height: auto;
+        i{
+            color: $rojoMain;
+        }
     }
 
     &__logoContact {

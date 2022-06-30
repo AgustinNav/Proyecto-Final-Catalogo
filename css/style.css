@@ -245,6 +245,11 @@ p {
       color: #1877f2; }
     .footer__redes .fa-youtube {
       color: #b91d1d; }
+  .footer__legales {
+    width: auto;
+    height: auto; }
+    .footer__legales i {
+      color: #b91d1d; }
   .footer__logoContact {
     display: flex;
     width: 50%;
