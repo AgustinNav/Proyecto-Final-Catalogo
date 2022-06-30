@@ -23,17 +23,25 @@
                 background-color: white;
 
                 &:hover {
-                    transition: .3s;
-                    transform: scale(1.05);
+                    @extend %estiloHover;
+                }
+            }
+
+            &__active {
+                @extend %menuActive;
+
+                &--alt {
+                    @extend %menuActive;
+                    display: none !important;
                 }
             }
 
             &--alt {
-                display: none;
+                @include estiloBotones($oroMain, white, black);
+                display: none !important;
             }
         }
     }
-
 }
 
 @media (max-width: 840px) {
@@ -41,6 +49,7 @@
         height: 12vh;
 
         &__menu {
+            margin-top: 10px;
             height: 100%;
             align-items: center !important;
 
@@ -52,29 +61,26 @@
                     display: none;
                 }
 
-                &--alt {
-                    display: inline;
-                    width: 55px;
-                    height: 55px;
-                    margin: 0px;
-                    list-style-type: none;
-                    overflow: hidden;
-                    box-shadow: 2px 5px $oroMain;
-                    border-radius: 95px;
-                    background-color: #ffffff;
-                    padding: 15px;
-                    text-align: center;
+                &__active {
+                    display: none;
 
-                    &:hover {
-                        background-color: #eeeeee;
-                        box-shadow: 2px 5px $oroMain;
-                        transition: .3s;
-                        transform: scale(1.1);
+                    &--alt {
+                        height: 60px;
+                        width: 60px;
+                        padding: auto;
+                        margin: auto;
+                        display: inline !important;
                     }
+                }
 
+                &--alt {
+                    height: 60px;
+                    width: 60px;
+                    padding: auto;
+                    margin: auto;
+                    display: inline !important;
                 }
             }
-
         }
     }
 }
