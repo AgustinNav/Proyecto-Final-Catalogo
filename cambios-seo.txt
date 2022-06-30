@@ -1,0 +1,33 @@
+Cambios generales
+
+Se agregó la pagina pages para organizar mejor la carpeta del proyecto.
+Se agregó el sitemap.
+Se cambiaron los títulos de las páginas para contener el nombre del emprendimiento.
+Se acomodo apropiadamente el uso de títulos en la página siguiendo la jerarquía.
+
+
+Index
+
+Se le agregó las siguientes keywords al index: Red Honey, ropa, moda, estilo, calidad, comodidad. 
+Se configura la descripción de la siguiente forma: “Muestrario de estilos con vestimenta que nosotras mismas vendemos.”
+
+
+Quienes somos
+
+Se le agregó las siguientes keywords al index: Red Honey, información, conocenos, confianza. 
+Se configura la descripción de la siguiente forma: “Nuestra función es de distribuidoras, nos movemos con distintos proveedores de la mejor calidad y con el mejor precio para asegurarnos de la calidad de lo que nosotras mismas usamos, y lo queremos compartir con ustedes.”
+
+Catálogo
+
+Se le agregó las siguientes keywords al index: Red Honey, ropa, moda, catálogo, opciones. 
+Se configura la descripción de la siguiente forma: “Catálogo virtual interactivo y dinámico, chusmea tu próxima compra o regalo!.”
+
+New In!
+
+Se le agregó las siguientes keywords al index: Red Honey, votaciones, ingresos, próxima temporada. 
+Se configura la descripción de la siguiente forma: “Votación vital para futuros ingresos y próximas temáticas o tendencias.”
+
+Contacto
+
+Se le agregó las siguientes keywords al index: Red Honey, contacto, consultas, reclamos. 
+Se configura la descripción de la siguiente forma: “Contactanos para dejar tu sugerencia, reclamo o petición de lo que necesites”.
