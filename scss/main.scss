@@ -7,9 +7,10 @@
 }
 
 /* Variables */
+
 @import './variables/colores';
-@import './variables/mixins';
 @import './variables/extend';
+@import './variables/mixins';
 
 
 /* Particiones */
@@ -61,11 +62,6 @@ h3,
 h5,
 p {
     @extend %estilosTextos;
-}
-
-a{
-    text-decoration: none;
-    color: black;
 }
 
 /* Contenedor padre  */

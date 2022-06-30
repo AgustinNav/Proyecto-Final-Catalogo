@@ -7,13 +7,34 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
     &__menu {
-
-        &__link {
-
-            @include estiloBotones($oroMain, white, black);
+        a {
+            color: black;
+            text-transform: capitalize;
+            text-decoration: none;
 
             &:hover {
-                @extend %estiloHover;
+                color: black;
+                font-weight: 700;
+            }
+
+            &.active {
+                @extend %menuActive;
+            }
+        }
+
+        &__link {
+            &:not(--logo) {
+                list-style-type: none;
+                overflow: hidden;
+                box-shadow: 2px 5px $oroMain;
+                border-radius: 95px;
+                background-color: #ffffff;
+                padding: 15px;
+                text-align: center;
+
+                &:hover {
+                    @extend %estiloHover;
+                }
             }
 
             &--logo {
@@ -23,25 +44,17 @@
                 background-color: white;
 
                 &:hover {
-                    @extend %estiloHover;
-                }
-            }
-
-            &__active {
-                @extend %menuActive;
-
-                &--alt {
-                    @extend %menuActive;
-                    display: none !important;
+                    transition: .3s;
+                    transform: scale(1.05);
                 }
             }
 
             &--alt {
-                @include estiloBotones($oroMain, white, black);
-                display: none !important;
+                display: none;
             }
         }
     }
+
 }
 
 @media (max-width: 840px) {
@@ -49,7 +62,6 @@
         height: 12vh;
 
         &__menu {
-            margin-top: 10px;
             height: 100%;
             align-items: center !important;
 
@@ -61,26 +73,29 @@
                     display: none;
                 }
 
-                &__active {
-                    display: none;
-
-                    &--alt {
-                        height: 60px;
-                        width: 60px;
-                        padding: auto;
-                        margin: auto;
-                        display: inline !important;
-                    }
-                }
-
                 &--alt {
-                    height: 60px;
-                    width: 60px;
-                    padding: auto;
-                    margin: auto;
-                    display: inline !important;
+                    display: inline;
+                    width: 55px;
+                    height: 55px;
+                    margin: 0px;
+                    list-style-type: none;
+                    overflow: hidden;
+                    box-shadow: 2px 5px $oroMain;
+                    border-radius: 95px;
+                    background-color: #ffffff;
+                    padding: 15px;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: #eeeeee;
+                        box-shadow: 2px 5px $oroMain;
+                        transition: .3s;
+                        transform: scale(1.1);
+                    }
+
                 }
             }
+
         }
     }
 }

@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Red Honey, votaciones, ingresos, proxima temporada">
-    <meta name="description" content="Votacion vital para futuros ingresos y proximas tematicas o tendencias">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +12,15 @@
     <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Iconos -->
-    <link rel="shortcut icon" href="../img/favi.ico">
+    <link rel="shortcut icon" href="./img/favi.ico">
     <script src="https://kit.fontawesome.com/1ac0559730.js" crossorigin="anonymous"></script>
     <!-- BootsTraps -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Estilo -->
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-    <title>Ingresos - RedHoney - </title>
+    <title>Contactanos!</title>
 </head>
 
 <body>
@@ -34,11 +31,11 @@
                 <!-- Menu estandar -->
                 <li class="navL__menu__link"><a href="./quienes_somos.html">Quienes somos</a></li>
                 <li class="navL__menu__link"><a href="./catalogo.html">Catalogo</a></li>
-                <li class="navL__menu__link--logo"><a href="./index.html"><img src="../img/logo.jpg"
+                <li class="navL__menu__link--logo"><a href="./index.html"><img src="./img/logo.jpg"
                             alt="logo"></a>
                 </li>
-                <li class="navL__menu__link__active"><a href="./newin.html">NEW IN!</a></li>
-                <li class="navL__menu__link"><a href="./contacto.html">Contacto</a></li>
+                <li class="navL__menu__link"><a href="./newin.html">NEW IN!</a></li>
+                <li class="navL__menu__link"><a class="active" href="./contacto.html">Contacto</a></li>
                 <!-- Menu alternativo -->
                 <li class="navL__menu__link--alt"><a href="./index.html"><i
                             class="fa-solid fa-house"></i></a></li>
@@ -47,8 +44,8 @@
                 </li>
                 <li class="navL__menu__link--alt"><a href="./catalogo.html"><i class="fa-solid fa-book-open"></i></a>
                 </li>
-                <li class="navL__menu__link__active--alt"><a href="./newin.html"><i class="fa-solid fa-crown"></i></a></li>
-                <li class="navL__menu__link--alt"><a href="./contacto.html"><i class="fa-solid fa-message"></i></a></li>
+                <li class="navL__menu__link--alt"><a href="./newin.html"><i class="fa-solid fa-crown"></i></a></li>
+                <li class="navL__menu__link--alt"><a class="active" href="./contacto.html"><i class="fa-solid fa-message"></i></a></li>
             </ul>
         </nav>
 
@@ -68,15 +65,15 @@
                     <div class="container d-flex flex-row">
 
                         <div class="carousel-item active">
-                            <img src="../img/banner1.jpg" class="d-block" alt="Banner 1">
+                            <img src="./img/banner1.jpg" class="d-block" alt="Banner 1">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="../img/banner2.jpg" class="d-block" alt="Banner 2">
+                            <img src="./img/banner2.jpg" class="d-block" alt="Banner 2">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="../img/banner3.jpg" class="d-block" alt="Banner 3">
+                            <img src="./img/banner3.jpg" class="d-block" alt="Banner 3">
                         </div>
 
                     </div>
@@ -93,14 +90,36 @@
 
         </header>
 
-        <main class="container-fluid d-flex flex-column main">
-            <div class="mainIn d-flex flex-column flex-wrap align-content-center text-align-center">
-                <h1>Coming Soon. . . </h1>
-                <iframe src="https://giphy.com/embed/Yj6d4OMmDV3bnYtOow" width="480" height="270" frameBorder="0"
-                    class="giphy-embed" allowFullScreen></iframe>
-                <p><a href="https://giphy.com/gifs/CBeebiesHQ-painting-diy-Yj6d4OMmDV3bnYtOow"></a></p>
-                <h2>Sitio en construccion.</h2>
-            </div>
+        <main>
+            <form action="#" class="container-fluid d-flex flex-column align-items-center align-content-center">
+                <h1>Contactanos</h1>
+                <div class="mainContacto d-flex flex-column animate__animated animate__flip">
+                    <h3>Motivo del contacto?</h3>
+                    <div>
+                        <input type="radio" name="motivo" value="Prendas">
+                        <label>Prendas </label>
+                        <input type="radio" name="motivo" value="Ingresos">
+                        <label>Ingresos </label>
+                        <input type="radio" name="motivo" value="Mayoristas">
+                        <label>Mayoristas </label>
+                        <input type="radio" name="motivo" value="Otro">
+                        <label>Otro </label>
+                    </div>
+                    <input type="text" placeholder="Nombre" class="block">
+                    <input type="email" placeholder="Email" class="block">
+
+                    <textarea class="block" name="" id="" cols="30" rows="10"
+                        placeholder="Dejanos aca tu consulta!"></textarea>
+                    <div>
+                        <input type="checkbox" name="acepta" value="1" title="NL">
+                        <span>¿Desea sucribirse a nuestro Newsletter?</span>
+                    </div>
+                    <div>
+                        <input type="reset" value="Vaciar campos">
+                        <input type="submit" value="Enviar datos">
+                    </div>
+                </div>
+            </form>
         </main>
 
         <footer class="row container-fluid footer p-0 m-0">
@@ -116,14 +135,13 @@
                 <a href="https://www.youtube.com/watch?v=UM8XW543tmw"><i class="fa-brands fa-youtube fa-2xl
                         animate__animated animate__bounceIn"></i></a>
             </div>
-            <div class="footer__legales col d-flex justify-content-evenly align-items-center">
-                <a href="./newin.html#"><i class="col fa-regular fa-circle-up fa-2xl"></i></a>
-                <p class="col">© 2022 Red Honey, todos los derechos reservados.</p>
+            <div class="footer__legales col">
+
             </div>
             <div class="footer__logoContact col">
                 <ul>
-                    <li><a href="./index.html"><img src="../img/logo.jpg" alt="Logo"></a></li> 
-                    <li><em>Red Honey ♥</em></li>
+                    <li><a href="./index.html"><img src="./img/logo.jpg" alt="Logo"></a></li>
+                    <li>© ®</li>
                 </ul>
             </div>
         </footer>

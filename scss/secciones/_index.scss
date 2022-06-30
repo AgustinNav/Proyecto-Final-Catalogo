@@ -4,14 +4,13 @@
 
     &__card {
         overflow: hidden;
+        height: auto;
         width: auto;
-        height: 500px;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
         text-align: center;
-        text-decoration: none;
         background-color: $rojo40;
         box-shadow: 15px 15px 5px $oroMain;
         border: 0.5px solid rgba(0, 0, 0, 0.5);
@@ -35,10 +34,6 @@
     
         h2 {
             margin-bottom: 20px;
-        }
-
-        &__boton{
-            @include estiloBotones($rojo40, $oroMain, black);
         }
 
     }
